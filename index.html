@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Interactive Quiz</h1>
+            <div class="progress-container">
+                <span class="progress-text">Question <span id="current-question">1</span> of <span id="total-questions">10</span></span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-content">
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <div class="feedback-container" id="feedback-container">
+                <div class="feedback-message"></div>
+                <div class="fun-fact"></div>
+                <button class="next-button" id="next-button">Next Question</button>
+            </div>
+        </div>
+
+        <div class="quiz-results" id="quiz-results">
+            <h2>Quiz Complete!</h2>
+            <p>Your score: <span id="final-score">0</span> out of <span id="total-score">10</span></p>
+            <button class="restart-button" id="restart-button">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
